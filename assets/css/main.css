@@ -8,12 +8,16 @@ html,body{
   width: 100%;
   height: 100%;
 }
-
+.textoMayuscula{
+  text-transform: uppercase;
+}
 .container{
   display: flex;
   width: 100%;
 }
 #navegador{
+  position: fixed;
+  z-index: 1;
   justify-content: space-around;
   align-items: center;
   background-color: #8FC04D;
@@ -26,45 +30,78 @@ html,body{
   padding: 1%;
   color: #fff;
   border: 0;
-  border-radius: 5% 20%;
+  border-radius: 5% 50%;
   font-size: 100%;
   background-color: #027B0A;
 }
+
+#navegador a{
+  text-decoration: none;
+  color: white;
+}
+#navegador button:hover{
+  background-color: #8FC04D;
+  border: 2px solid #027B0A;
+  cursor: pointer;
+}
+
 
 header img{
   display: none;
 }
 
+@media (min-width:451px) {
+  #navegador{
+    display: flex;
+  }
+}
 @media (min-width:0px) and (max-width:450px) {
   header{
     background-color: #027B0A;
     justify-content: flex-end;
   }
+  header label {
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+    color: #fff;
+  }
+  header label:hover {
+    margin: 6px 0;
+    cursor: pointer;
+    background-color: #8FC04D;
+    color: #027B0A;
+  }
+
   #navegador{
     display: none;
-  }
-  header img{
-    width: 32px;
-    height: 32px;
-    align-content: flex-end;
-    align-self: center;
-    display: flex;
-    margin: 2%;
   }
   #somos{
     display: none;
   }
+  #navegador{
+    margin-top: 13%;
+    z-index: 999;
+  }
 }
 /*termina media*/
 
-#inicio h1{
-  position: absolute;
-
+#inicio div{
+  justify-content: center;
 }
+#inicio h2{
+  position: absolute;
+  align-self: flex-end;
+  font-size: 100%;
+  padding: 2%;
+}
+
 #inicio img{
-  width: 90%;
+  margin-top: 5%;
+  width: 80%;
   align-self: center;
   height: auto;
+  left: 2%;
 }
 #somos{
   background-color: #8FC04D;
@@ -77,6 +114,7 @@ header img{
   flex-direction: row;
 }
 #somos h2{
+  padding: 2%;
   width: 100%;
   text-align: center;
 }
@@ -111,7 +149,6 @@ header img{
 }
 
 #video iframe{
-  /*position: absolute;*/
   width: 100%;
   height:100%;
   align-self: center;
@@ -137,24 +174,33 @@ header img{
   margin-top: 5%;
 }
 #contacto button{
+  background-color:#027B0A;
+  border: 0;
+  border-radius: 5% 50%;
+  padding: 2%;
+  color: #fff;
   width: 30%;
   margin: 5%;
   align-self: flex-end;
 }
+#contacto button:hover{
+  background-color: #8FC04D;
+  cursor: pointer;
+  border: 2px solid #027B0A;
+}
 
 footer{
   background-color: #027B0A;
-  font-size: 10px;
+  font-size: 100%;
   text-align: center;
   padding: 2%;
   color: #fff;
 }
-@media (max-width:380px) {
+@media (min-width:0px) and (max-width:450px) {
   #contacto{
     background-color: #fff;
   }
   #video{
-    /*position: absolute;*/
     width: 100%;
     height: auto;
     background-color: #8FC04D;
