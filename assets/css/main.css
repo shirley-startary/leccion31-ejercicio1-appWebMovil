@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "combo", cursive;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+}
+#navegador{
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8FC04D;
+}
+#navegador button{
+  width: 99.5%;
+  margin:0.5%;
+  margin-top: 2%;
+  margin-bottom:2%;
+  padding: 1%;
+  color: #fff;
+  border: 0;
+  border-radius: 5% 20%;
+  font-size: 100%;
+  background-color: #027B0A;
+}
+
+header img{
+  display: none;
+}
+
+@media (min-width:0px) and (max-width:450px) {
+  header{
+    background-color: #027B0A;
+    justify-content: flex-end;
+  }
+  #navegador{
+    display: none;
+  }
+  header img{
+    width: 32px;
+    height: 32px;
+    align-content: flex-end;
+    align-self: center;
+    display: flex;
+    margin: 2%;
+  }
+  #somos{
+    display: none;
+  }
+
+
+}
+/*termina media*/
+
+#inicio h1{
+  position: absolute;
+
+}
+#inicio img{
+  width: 90%;
+  align-self: center;
+  height: auto;
+}
+#somos{
+  background-color: #8FC04D;
+}
+
+.column{
+  flex-direction: column;
+}
+.row{
+  flex-direction: row;
+}
+#somos h2{
+  width: 100%;
+  text-align: center;
+}
+.divItems{
+  height: 100%;
+  align-items: center;
+}
+.divItems img{
+  margin: 2%;
+  width: 46%;
+  height: 100%;
+}
+.divItems p{
+  padding: 2%;
+}
+#video{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+#video div{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 70%;
+}
+#video h2{
+  text-align: center;
+  width: 100%;
+  margin-top: 5%
+}
+
+#video iframe{
+  /*position: absolute;*/
+  width: 100%;
+  height:100%;
+  align-self: center;
+  margin: 5%;
+}
+
+.divContenedor{
+  justify-content: center;
+}
+.divContenedor h2{
+  text-align: center;
+  padding: 2%;
+}
+.divContenedor form{
+  width: 50%;
+  align-self: center;
+}
+#contacto{
+  margin: 2% auto;
+  background-color:  #8FC04D;
+}
+#contacto input, textarea{
+  margin-top: 5%;
+}
+#contacto button{
+  width: 30%;
+  margin: 5%;
+  align-self: flex-end;
+}
+
+footer{
+  background-color: #027B0A;
+  font-size: 10px;
+  text-align: center;
+  padding: 2%;
+  color: #fff;
+}
+@media (max-width:380px) {
+  #contacto{
+    background-color: #fff;
+  }
+  #video{
+    /*position: absolute;*/
+    width: 100%;
+    height: 34%;
+    background-color: #8FC04D;
+  }
+}
