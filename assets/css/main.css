@@ -54,8 +54,6 @@ header img{
   #somos{
     display: none;
   }
-
-
 }
 /*termina media*/
 
@@ -158,7 +156,7 @@ footer{
   #video{
     /*position: absolute;*/
     width: 100%;
-    height: 34%;
+    height: auto;
     background-color: #8FC04D;
   }
 }
